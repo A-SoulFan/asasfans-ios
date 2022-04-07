@@ -11,7 +11,7 @@ import SwiftUI
 struct ASFansApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ASFansView()
         }
     }
 }
