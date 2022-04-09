@@ -16,7 +16,7 @@ struct VideoModelPage {
     }
     
     mutating func flushVideos(videos multiVideos: [SingleVideo]) {
-        videos = multiVideos
+        videos = multiVideos + videos
     }
     
     struct SingleVideo: Identifiable, Decodable {
