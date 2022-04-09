@@ -24,6 +24,7 @@
 		894095F027FEBC28004EAFAB /* AnimatableFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894095EF27FEBC28004EAFAB /* AnimatableFontModifier.swift */; };
 		894095F227FED87B004EAFAB /* VideoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894095F127FED87B004EAFAB /* VideoViewModel.swift */; };
 		894095F427FED9AD004EAFAB /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894095F327FED9AD004EAFAB /* Network.swift */; };
+		89CC56EA2801D8800027A432 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 89CC56E92801D8800027A432 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		894095EF27FEBC28004EAFAB /* AnimatableFontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableFontModifier.swift; sourceTree = "<group>"; };
 		894095F127FED87B004EAFAB /* VideoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewModel.swift; sourceTree = "<group>"; };
 		894095F327FED9AD004EAFAB /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		89CC56E92801D8800027A432 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 		894095C327FE128F004EAFAB = {
 			isa = PBXGroup;
 			children = (
+				89CC56E92801D8800027A432 /* README.md */,
 				894095CE27FE128F004EAFAB /* ASFans */,
 				894095CD27FE128F004EAFAB /* Products */,
 			);
@@ -172,6 +175,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89CC56EA2801D8800027A432 /* README.md in Resources */,
 				894095D727FE1290004EAFAB /* Preview Assets.xcassets in Resources */,
 				894095D427FE1290004EAFAB /* Assets.xcassets in Resources */,
 			);
