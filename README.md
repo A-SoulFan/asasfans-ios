@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://app.asf.ink/assets/images/resources/logo-dark.png" width="200" height="200" alt="go-cqhttp">
+    <img src="https://github.com/yanlc39/as-as-fans/blob/main/ASFans/Assets.xcassets/AppIcon.appiconset/ASASF_180.png?raw=true" width="200" height="200" alt="AS-AS-Fans">
 </p>
 
 <div align="center">
