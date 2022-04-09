@@ -18,9 +18,9 @@ _✨ 一个魂要集合捏 ✨_
   <a href="https://github.com/yanlc39/as-as-fans/releases">
     <img src="https://img.shields.io/github/v/release/yanlc39/as-as-fans?color=blueviolet&include_prereleases" alt="release">
   </a>
-  <a href="https://github.com/yanlc39/as-as-fans/actions">
+  <!-- <a href="https://github.com/yanlc39/as-as-fans/actions">
     <img src="https://github.com/yanlc39/as-as-fans/workflows/CI/badge.svg" alt="action">
-  </a>
+  </a> -->
   <a href="https://goreportcard.com/report/github.com/yanlc39/as-as-fans">
   <img src="https://goreportcard.com/badge/github.com/yanlc39/as-as-fans" alt="GoReportCard">
   </a>
