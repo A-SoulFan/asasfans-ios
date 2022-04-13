@@ -14,6 +14,7 @@ struct TabBar: View {
     @AppStorage("showModal") var showModal = false
     
     @ObservedObject var videoViewModel = VideoViewModel()
+    @ObservedObject var reCreationViewModel = ReCreationViewModel()
     
     var body: some View {
         ZStack(alignment: .bottom) {
@@ -21,7 +22,7 @@ struct TabBar: View {
                     case .video:
                         VideoView(videoViewModel: videoViewModel)
                     case .reCreation:
-                        ReCreationView()
+                        ReCreationView(reCreationViewModel: reCreationViewModel)
                     case .voiceStudio:
                         VoiceStudioView()
                     case .tools:

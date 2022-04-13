@@ -16,7 +16,7 @@ struct PicView: View {
             switch phase {
             case .success(let image):
                 image.resizable()
-                    .transition(.scale(scale: 0.5, anchor: .center))
+                    .transition(.identity)
             case .empty:
                 ProgressView()
             case .failure(_):

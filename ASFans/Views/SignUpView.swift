@@ -8,19 +8,24 @@
 import SwiftUI
 
 struct SignUpView: View {
+
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
             Text("登录")
                 .font(.largeTitle).bold()
-            Text("加入到一个魂的聚集地中")
+            Text("加入到一个魂的聚集地")
                 .font(.headline)
-            Button {} label: {
-                Text("点我注册")
+            Button {
+
+            } label: {
+                Text("暂未开放用户功能")
                     .frame(maxWidth: .infinity)
             }
             .buttonStyle(.bordered)
             .tint(.accentColor)
             .controlSize(.large)
+            .disabled(true)
         }
         .padding(20)
         .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 30, style: .continuous))

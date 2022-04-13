@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct VideoView: View {
+    @Environment(\.openURL) private var openURL
     
     @State var hasScrolled = true
     @State var page = 1
     @State var moreInfo = false
-//    @State var currentVideo: SingleResponse = 
+    @State var currentVideo: VideoViewModel.Video? = nil
     
     @ObservedObject var videoViewModel: VideoViewModel
     
@@ -31,11 +32,13 @@ struct VideoView: View {
     var body: some View {
         NavigationView {
             GeometryReader { geometry in
-                List {
+                VStack {
+                    List {
                     ForEach(videoViewModel.videos) { card in
                         Button {
                             withAnimation(.easeInOut) {
                                 moreInfo = true
+                                currentVideo = card
                             }
                         } label: {
                             OneCardView(card)
@@ -43,6 +46,7 @@ struct VideoView: View {
                     }
                     .frame(maxWidth: .infinity)
                 }
+                .coordinateSpace(name: "scroll")
                 .listStyle(.plain)
                 .frame(maxWidth: .infinity)
                 .safeAreaInset(edge: .bottom, content: {
@@ -51,6 +55,7 @@ struct VideoView: View {
                 .refreshable {
                     page += 1
                     await fetchVideoDatas()
+                }
                 }
                 if moreInfo {
                     ZStack {
@@ -74,7 +79,6 @@ struct VideoView: View {
                 }
             }
         })
-        .coordinateSpace(name: "scroll")
         .safeAreaInset(edge: .top, content: {
             Color.clear.frame(height: 70)
         })
@@ -88,7 +92,7 @@ struct VideoView: View {
     var moreInfoCard: some View {
         VStack(alignment: .leading, spacing: 16) {
             HStack {
-                Text("详情")
+                Text(currentVideo!.title)
                     .font(.largeTitle).bold()
                 Spacer()
                 Button {
@@ -103,9 +107,19 @@ struct VideoView: View {
                     
                 }
             }
-            Text("加入到一个魂的聚集地中")
-                .font(.headline)
-            Button {} label: {
+            HStack {
+                PicView(url: currentVideo!.pic)
+                    .frame(width: CardConstant.width, height: CardConstant.height)
+                Spacer()
+                Text(currentVideo!.desc)
+                    .font(.caption2)
+                    .foregroundColor(.secondary)
+            }
+            Button {
+                if let url = URL(string: "https://m.bilibili.com/video/" + currentVideo!.bvid) {
+                    openURL(url)
+                }
+            } label: {
                 Text("前往bilibili观看")
                     .frame(maxWidth: .infinity)
             }

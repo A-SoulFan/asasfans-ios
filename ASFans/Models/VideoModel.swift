@@ -7,11 +7,11 @@
 
 import Foundation
 
-struct VideoModelPage {
+struct VideoModel {
     
     private(set) var videos: Array<SingleVideo>
     
-    init(createVideoArray: (Array<SingleResponse>) -> Array<SingleVideo>) {
+    init(createVideoArray: (Array<VideoSingleResponse>) -> Array<SingleVideo>) {
         videos = []
     }
     
@@ -29,7 +29,7 @@ struct VideoModelPage {
         var name: String
         var view: Int
         var like: Int
-        
+        var desc: String
     }
     
     
