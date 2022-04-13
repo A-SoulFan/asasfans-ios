@@ -50,7 +50,7 @@ struct ReCreationView: View {
                                             .padding(.leading, 10)
                                             .padding(.trailing, 10)
                                         VStack {
-                                            PicView(url: pic.img_src)
+                                            PicView(url: pic.img_src+"@200w_200h_1e_1c.jpg")
                                                 .frame(width: width, height: height, alignment: .top)
                                                 .aspectRatio(pic.img_width/pic.img_height, contentMode: .fill)
                                                 .padding(.leading, 10)

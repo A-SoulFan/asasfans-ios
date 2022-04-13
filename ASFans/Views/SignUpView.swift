@@ -19,7 +19,7 @@ struct SignUpView: View {
             Button {
 
             } label: {
-                Text("暂未开放用户功能")
+                Text("暂未开放")
                     .frame(maxWidth: .infinity)
             }
             .buttonStyle(.bordered)
