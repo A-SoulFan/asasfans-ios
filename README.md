@@ -21,8 +21,8 @@ _✨ 一个魂要集合捏 ✨_
   <!-- <a href="https://github.com/yanlc39/as-as-fans/actions">
     <img src="https://github.com/yanlc39/as-as-fans/workflows/CI/badge.svg" alt="action">
   </a> -->
-  <a href="https://img.shields.io/badge/Swift-iOS-blue?style=for-the-badge&logo=appveyor">
-  <img src="https://img.shields.io/badge/Swift-iOS-blue?style=for-the-badge&logo=appveyor" alt="SwiftSupport">
+  <a href="https://img.shields.io/badge/Swift-iOS-blue?logo=swift">
+  <img src="https://img.shields.io/badge/Swift-iOS-blue?logo=swift" alt="SwiftSupport">
   </a>
 </p>
 
